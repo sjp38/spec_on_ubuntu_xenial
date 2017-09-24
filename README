@@ -5,9 +5,24 @@ on Ubuntu Xenial (16.04).
 Quick Tutorial
 ==============
 
-Extract source code from the iso file
+Extract source code from the iso file.
 ```
 $ ./extract_spec.sh
+```
+
+Apply patch for build.
+```
+$ ./patch-for-ubuntu16.04.sh
+```
+
+Build SPEC CPU 2006.  This would take few minutes.
+```
+$ ./build.sh
+```
+
+Run mcf workload.
+```
+$ ./run.sh mcf
 ```
 
 
