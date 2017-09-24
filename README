@@ -1,0 +1,17 @@
+This is a toolbox for SPEC CPU 2006 v1.1 benchmark installation and execution
+on Ubuntu Xenial (16.04).
+
+
+Quick Tutorial
+==============
+
+Extract source code from the iso file
+```
+$ ./extract_spec.sh
+```
+
+
+Author
+======
+
+SeongJae Park <sj38.park@gmail.com>
