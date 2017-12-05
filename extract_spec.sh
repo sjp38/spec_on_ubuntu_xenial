@@ -19,7 +19,7 @@ mkdir $TARGET
 cp -R ./$TMPMNT/* $TARGET/
 sudo umount ./$TMPMNT
 rm -fr ./$TMPMNT/
-sudo chown -R sjpark $TARGET/
+sudo chown -R $USER $TARGET/
 sudo chmod -R 755 $TARGET/
 
 popd
