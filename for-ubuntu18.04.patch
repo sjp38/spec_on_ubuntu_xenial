@@ -1,0 +1,35 @@
+From 0b26223656bedf3dd74015fda401b456bd026aee Mon Sep 17 00:00:00 2001
+From: Yunjae Lee <lyj7694@gmail.com>
+Date: Fri, 26 Apr 2019 01:03:25 +0900
+Subject: [PATCH] Modify source for Ubuntu 18.04
+
+Signed-off-by: Yunjae Lee <lyj7694@gmail.com>
+---
+ tools/src/make-3.81/glob/glob.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/tools/src/make-3.81/glob/glob.c b/tools/src/make-3.81/glob/glob.c
+index a5e6a19..c93d8b4 100755
+--- a/tools/src/make-3.81/glob/glob.c
++++ b/tools/src/make-3.81/glob/glob.c
+@@ -51,7 +51,7 @@ USA.  */
+ #define GLOB_INTERFACE_VERSION 1
+ #if !defined _LIBC && defined __GNU_LIBRARY__ && __GNU_LIBRARY__ > 1
+ # include <gnu-versions.h>
+-# if _GNU_GLOB_INTERFACE_VERSION == GLOB_INTERFACE_VERSION
++# if _GNU_GLOB_INTERFACE_VERSION >= GLOB_INTERFACE_VERSION
+ #  define ELIDE_CODE
+ # endif
+ #endif
+@@ -207,7 +207,7 @@ my_realloc (p, n)
+ #endif /* __GNU_LIBRARY__ */
+ 
+ 
+-#if !defined __alloca && !defined __GNU_LIBRARY__
++#if !defined __alloca && defined __GNU_LIBRARY__
+ 
+ # ifdef	__GNUC__
+ #  undef alloca
+-- 
+2.17.1
+
