@@ -1,5 +1,5 @@
 This is a toolbox for SPEC CPU 2006 v1.1 benchmark installation and execution
-on Ubuntu Xenial (16.04).
+on Ubuntu Xenial (16.04) and Bionic (18.04).
 
 
 Quick Tutorial
@@ -13,6 +13,10 @@ $ ./extract_spec.sh
 Apply patch for build.
 ```
 $ ./patch-for-ubuntu16.04.sh
+```
+or
+```
+$ ./patch-for-ubuntu18.04.sh
 ```
 
 Build SPEC CPU 2006.  This would take few minutes.
@@ -30,3 +34,4 @@ Author
 ======
 
 SeongJae Park <sj38.park@gmail.com>
+Yunjae Lee <lyj7694@gmail.com>
