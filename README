@@ -1,3 +1,10 @@
+This repository is __deprecated__.  Please use
+[spec_cpu_on_ubuntu](https://github.com/sjp38/spec_cpu_on_ubuntu), which
+officially supports multiple Ubuntu distributions, instead.
+
+----
+
+
 This is a toolbox for SPEC CPU 2006 v1.1 benchmark installation and execution
 on Ubuntu Xenial (16.04) and Bionic (18.04).
 
